@@ -2,13 +2,7 @@ FROM docker.io/eclipse-temurin:17-jre-alpine
 
 RUN mkdir /app
 
-RUN addgroup -g 1001 -S appuser
-RUN adduser -u 1001 -S appuser -G appuser
-RUN chown -R appuser:appuser /app
-
 WORKDIR /app
-
-USER 1001
 
 RUN wget https://github.com/membrane/service-proxy/releases/download/v5.1.0/membrane-api-gateway-5.1.0.zip -O membrane.zip
 RUN unzip membrane.zip
