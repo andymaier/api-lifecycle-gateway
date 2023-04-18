@@ -1,0 +1,8 @@
+POST https://membrane.azurewebsites.net/v1/rfqs
+Content-Type: application/json
+
+{
+    "id": "{{$random.uuid}}",
+    "name": "string",
+    "price": 1001
+}
