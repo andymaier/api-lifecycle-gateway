@@ -18,8 +18,7 @@ COPY proxies.xml /app/membrane-api-gateway-5.1.0/conf/
 
 RUN rm /app/membrane-api-gateway-5.1.0/conf/fruitshop-api.yml
 
-RUN wget "https://gitlab.com/api/v4/projects/44417807/repository/files/rfq-api-v1.yml/raw?ref=main" \
-    --header="Private-Token: glpat-q5vAKuJ8enxUyWcMKs73" -O membrane-api-gateway-5.1.0/conf/rfq-api-v1.yml
+RUN wget "https://gitlab.com/api/v4/projects/44417807/repository/files/rfq-api-v1.yml/raw?ref=main"  -O membrane-api-gateway-5.1.0/conf/rfq-api-v1.yml
 
 EXPOSE 80
 
