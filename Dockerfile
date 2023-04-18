@@ -1,4 +1,4 @@
-FROM docker.io/eclipse-temurin:17-jre-alpine
+FROM docker.io/eclipse-temurin:17.0.6_10-jre-focal
 
 RUN mkdir /app
 
