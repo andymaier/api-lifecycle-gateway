@@ -7,7 +7,6 @@ Projekt
 1. proxies.xml zeigen
 2. gitlab-ci.yml
 
-
 Backend
 
 https://rfq-server.azurewebsites.net
