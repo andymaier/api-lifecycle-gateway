@@ -1,4 +1,8 @@
-POST https://membrane.azurewebsites.net/v1/rfqs
+GET https://api-lifecycle-gateway.azurewebsites.net/api-doc
+
+###
+
+POST https://api-lifecycle-gateway.azurewebsites.net/v1/rfqs
 Content-Type: application/json
 
 {

@@ -9,12 +9,13 @@
 	<router>
 
 		<api port="80">
-			<openapi dir="conf" validateRequests="yes" validateResponses="yes"/>
+			<openapi dir="conf" validateRequests="yes"/>
+			<target url="https://rfq-server.azurewebsites.net"/>
 		</api>
 
 		<api port="80">
 			<response>
-				<template>OK</template>
+				<template>I'am good!</template>
 			</response>
 			<return statusCode="200" contentType="plain/text"/>
 		</api>
