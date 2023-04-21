@@ -1,4 +1,4 @@
-# Demo
+# API Gateway for the Lifecycle Demo
 
 ## Logs
 
