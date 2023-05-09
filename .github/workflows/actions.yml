@@ -18,7 +18,7 @@ jobs:
         tags: |
           type=ref,event=branch
           type=ref,event=pr
-          type=semver,pattern={{version}}
+          type=semver,pattern={{major}},value=7
     - name: Set up Buildx
       uses: docker/setup-buildx-action@v2
     - name: Login
@@ -31,8 +31,8 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         push: true
-        tags: ${{github.run_number}}
-#        tags: ${{ steps.meta.outputs.tags }}
+#        tags: ${{github.run_number}}
+        tags: ${{ steps.meta.outputs.tags }}
 
   deploy:
     runs-on: ubuntu-latest
