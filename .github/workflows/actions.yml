@@ -31,7 +31,7 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         push: true
-        tags: ${GITHUB_RUN_NUMBER}
+        tags: ${{GITHUB_RUN_NUMBER}}
 #        tags: ${{ steps.meta.outputs.tags }}
 
   deploy:
@@ -49,4 +49,4 @@ jobs:
           app-name: 'api-lifecycle-gateway'
           slot-name: 'production'
           publish-profile: ${{ secrets.AzureAppService_PublishProfile_5cb6be00515f47a882fc0c959c7bed97 }}
-          images: "ghcr.io/predic8/api-lifecycle-gateway:${GITHUB_RUN_NUMBER}"
+          images: "ghcr.io/predic8/api-lifecycle-gateway:${{GITHUB_RUN_NUMBER}}"
