@@ -14,8 +14,6 @@ RUN rm /app/membrane-api-gateway-5.1.0/conf/fruitshop-api.yml
 
 RUN wget "https://raw.githubusercontent.com/predic8/rfq-api/main/rfq-api-v1.oas.yml" -O membrane-api-gateway-5.1.0/conf/rfq-api-v1.yml
 
-RUN setcap cap_net_raw+epi
-
 EXPOSE 80
 
 ENTRYPOINT ["/bin/sh","/app/membrane-api-gateway-5.1.0/service-proxy.sh"]
