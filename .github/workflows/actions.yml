@@ -46,7 +46,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'api-lifecycle-gateway'
+          app-name: 'lifecycle-membrane-gw'
           slot-name: 'production'
           publish-profile: ${{ secrets.AZ_PUBLISH_PROFILE }}
           images: "ghcr.io/predic8/api-lifecycle-gateway:${{github.run_number}}"
