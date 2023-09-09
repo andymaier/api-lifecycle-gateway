@@ -48,5 +48,5 @@ jobs:
         with:
           app-name: 'api-lifecycle-gateway'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_5cb6be00515f47a882fc0c959c7bed97 }}
+          publish-profile: ${{ secrets.AZ_PUBLISH_PROFILE }}
           images: "ghcr.io/predic8/api-lifecycle-gateway:${{github.run_number}}"
