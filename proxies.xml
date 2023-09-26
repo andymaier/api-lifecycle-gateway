@@ -9,7 +9,9 @@
 	<router>
 
 		<api port="80">
-			<openapi dir="conf" validateRequests="yes"/>
+			<openapi dir="conf" validateRequests="yes">
+				<rewrite protocol="https"/>
+			</openapi>
 			<jsonProtection/>
 			<target url="https://rfq-server.azurewebsites.net"/>
 		</api>
