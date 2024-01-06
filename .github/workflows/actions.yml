@@ -14,7 +14,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v4
       with:
-        images: ghcr.io/predic8/api-lifecycle-gateway
+        images: ghcr.io/andymaier/api-lifecycle-gateway
         flavor: latest=true
         tags: |
           type=ref,event=branch
@@ -49,4 +49,4 @@ jobs:
           app-name: 'lifecycle-membrane-gw'
           slot-name: 'production'
           publish-profile: ${{ secrets.AZ_PUBLISH_PROFILE }}
-          images: "ghcr.io/predic8/api-lifecycle-gateway:${{github.run_number}}"
+          images: "ghcr.io/andymaier/api-lifecycle-gateway:${{github.run_number}}"

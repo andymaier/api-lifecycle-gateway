@@ -10,7 +10,7 @@ Konfiguration für das [API Gateway](https://github.com/membrane/service-proxy) 
 az webapp create --name lifecycle-membrane-gw \
 --plan small \
 --resource-group demo \
---deployment-container-image-name ghcr.io/predic8/api-lifecycle-gateway:latest
+--deployment-container-image-name ghcr.io/andymaier/api-lifecycle-gateway:latest
 ```
 
 2. Download Publish Profile
